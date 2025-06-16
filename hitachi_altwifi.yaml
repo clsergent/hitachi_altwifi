@@ -1,0 +1,55 @@
+# import as a package
+# fill the ${ac_name} value
+
+rtl87xx:
+  board: generic-rtl8710bn-2mb-788k
+
+uart:
+  id: hitachi_bus
+  tx_pin: GPIO23 #PA23 = UART_TXD
+  rx_pin: GPIO18 #PA18 = UART_RXD
+  baud_rate: 9600
+  parity: ODD
+
+external_components:
+  - source:
+      type: git
+      url: https://github.com/lumixen/esphome-hlink-ac.git
+      ref: 2025.5.3
+    components: [hlink_ac]
+  
+climate:
+  - platform: hlink_ac
+    name: ${ac_name}
+    hvac_actions: true
+    supported_presets: # Presets are disabled by default. Remove this if your AC does not support Leave Home mode.
+      - AWAY
+    visual:
+      min_temperature: 16.0
+      max_temperature: 32.0
+      temperature_step:
+        target_temperature: 1.0
+        current_temperature: 1.0
+
+switch:
+  - platform: hlink_ac
+    remote_lock:
+      name: Remote lock
+    beeper:
+      name: Beeper
+
+sensor:
+  - platform: hlink_ac
+    outdoor_temperature:
+      name: Outdoor temperature
+      accuracy_decimals: 1
+
+text_sensor:
+  - platform: hlink_ac
+    model_name:
+      name: Model
+
+number:
+  - platform: hlink_ac
+    auto_target_temperature_offset:
+      name: Auto mode temperature offset
