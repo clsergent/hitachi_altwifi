@@ -4,7 +4,7 @@
 These instructions are intended to replace the stock firmware of the Hitachi AirHome 400 wifi module with a custom one based on esphome to integrate into Home Assistant.
 
 ## Initial checks
-Check if your setup applies. It *will* work your devices passes all checks. Otherwise it *may* work. Open an issue if necessary.
+Check if your setup applies. It *will* work your if your device passes all checks. Otherwise it *may* work. Open an issue if necessary.
 
 1. WiFi board: 
 check your onboard wifi module. It should be labelled **Model: RTL8710BN**.
