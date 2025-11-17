@@ -35,7 +35,7 @@ Connect the USB-TTL converter (FT232RL is known to work, PL2303 *will probably* 
 | TX  | RX2 (Log_RXD / PA29) |
 | GND | GND |
 
-Connect a **dedicated** 3V3 source (GND to GND and 3V3 to 3V3) as the USB-TTL converter source *may* be insufficient during heady read-write operations.
+Connect a **dedicated** 3V3 source (GND to GND and 3V3 to 3V3) as the USB-TTL converter source *may* be insufficient during heavy read-write operations.
 
 Connections can be done by soldering Dupont wires to the holes on the right of the board. Be cautious as  spacing is only 0.05″. Otherwise use a special probe.
 
