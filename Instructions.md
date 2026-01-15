@@ -107,3 +107,7 @@ Lowering baudrate is *advised* to avoid read-write errors (default baudrate is a
 3. Flash the firmware (set the correct filename): `ltchiptool flash write firmware.uf2 -b 115200`
 
 Next updates will be done OTA.
+
+## Enable the module
+<img width="352" height="551" alt="image" src="https://github.com/user-attachments/assets/30058f0c-2a53-4e50-b9bb-4859a7e8e7bf" />
+
