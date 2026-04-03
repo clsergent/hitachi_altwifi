@@ -30,8 +30,15 @@ This list references tested models only. If another model is compatible, please 
 - RAK-DJ18RH
 - RAK-DJ50RH
 
+## Protocol handling
+This project initially relied on custom firmware from [esphome-hlink-ac](https://github.com/lumixen/esphome-hlink-ac).
+However, firmware decompilation as well as UART sniffing revealed a new, undocumented [protocol](https://github.com/clsergent/hitachi_altwifi/blob/main/Protocol.md).
+
+A new firmware targeting this new protocol is in early development.
+
 ## Credits
-Custom firmware is based on [esphome-hlink-ac](https://github.com/lumixen/esphome-hlink-ac).
+Initial custom firmware provided by [esphome-hlink-ac](https://github.com/lumixen/esphome-hlink-ac) for legacy binary HLINK protocol.
+
 This repository is not affiliated with Hitachi in any way.
 
 ## License
