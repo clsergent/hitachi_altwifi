@@ -145,7 +145,7 @@ Example:
 
 Mnemonics are abbreviated identifiers representing device attributes or functions.
 
-A complete list of known mnemonics, along with their inferred meanings and possible values, is provided in a separate CSV file.
+A complete list of known mnemonics, along with their inferred meanings and possible values, is provided in a separate file.
 
 ## 9. Limitations
 
